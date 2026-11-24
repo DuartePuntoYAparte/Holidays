@@ -1,0 +1,52 @@
+Here’s a simple static site. Save it as `index.html` and put your animated GIF in the same folder as `animated.gif`.
+
+````html name=index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Animated GIF</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      background: #111827;
+      color: #f9fafb;
+      font: 16px/1.5 system-ui, sans-serif;
+    }
+
+    main {
+      width: min(100%, 900px);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(1.75rem, 5vw, 3rem);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 75vh;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px #0006;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Animated GIF</h1>
+    <img src="animated.gif" alt="An animated image">
+  </main>
+</body>
+</html>
